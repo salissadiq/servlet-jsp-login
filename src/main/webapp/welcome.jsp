@@ -16,5 +16,8 @@ if(session.getAttribute("uname") == null){
 <h1>Welcome ${uname } </h1>
 <a href="videos.jsp">Videos Here</a>
 
+<form action="logout"> 
+<input type="submit" />
+</form>
 </body>
 </html>
