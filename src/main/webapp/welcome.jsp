@@ -8,6 +8,9 @@
 </head>
 <body>
 <%
+response.setHeader("cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1
+response.setHeader("pragma", "no-cache"); //HTTP 1.0
+response.setHeader("Expires", "0"); // Proxy
 if(session.getAttribute("uname") == null){
 	response.sendRedirect("login.jsp");
 	
@@ -17,7 +20,7 @@ if(session.getAttribute("uname") == null){
 <a href="videos.jsp">Videos Here</a>
 
 <form action="logout"> 
-<input type="submit" />
+<input type="submit" value="logout"/>
 </form>
 </body>
 </html>
