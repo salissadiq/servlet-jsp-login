@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Welcome</title>
 </head>
 <body>
 <%
@@ -14,6 +14,7 @@ if(session.getAttribute("uname") == null){
 }
 %>
 <h1>Welcome ${uname } </h1>
+<a href="videos.jsp">Videos Here</a>
 
 </body>
 </html>
